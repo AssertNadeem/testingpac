@@ -1,0 +1,9 @@
+xeroUtilities\numberUtilities.class
+com\xero\pages\XeroHomePage.class
+xeroTestCases\verifyXeroDemoTests.class
+com\xero\pages\CompanyDetailsPage.class
+com\xero\pages\XeroLoginPage.class
+com\xero\pages\AccountingPage.class
+xeroUtilities\browserSelectionUtility.class
+com\xero\pages\FreeTrialPage.class
+xeroTestCases\verifyXeroFreeRegistrationTests.class
