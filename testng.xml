@@ -12,7 +12,6 @@
                     <include name="VerifyValidLoginToXero"/>
                     <include name="VerifyCompanyRegistration"/>
                     <include name="VerifyAccountSetup"/>
-                    <include name="VerifyLogoutWorks"/>
                 </methods>
             </class>
             <!--
