@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
+  <reporter-output>
+  </reporter-output>
+  <suite name="WestpacDemoProject" duration-ms="76064" started-at="2020-10-05T01:20:52 NZDT" finished-at="2020-10-05T01:22:08 NZDT">
+    <groups>
+    </groups>
+    <test name="WestpacUserStoryAcceptance" duration-ms="33467" started-at="2020-10-05T01:20:52 NZDT" finished-at="2020-10-05T01:21:26 NZDT">
+      <class name="westpacTestCases.westpacUserStoryOneTests">
+        <test-method status="PASS" signature="prepareSetupForTesting(java.lang.String)[pri:0, instance:westpacTestCases.westpacUserStoryOneTests@1832929]" name="prepareSetupForTesting" is-config="true" duration-ms="17571" started-at="2020-10-05T01:20:52 NZDT" finished-at="2020-10-05T01:21:10 NZDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prepareSetupForTesting -->
+        <test-method status="PASS" signature="checkUserlandsOnHomePage()[pri:0, instance:westpacTestCases.westpacUserStoryOneTests@1832929]" name="checkUserlandsOnHomePage" duration-ms="570" started-at="2020-10-05T01:21:10 NZDT" finished-at="2020-10-05T01:21:10 NZDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkUserlandsOnHomePage -->
+        <test-method status="PASS" signature="checkUserNavigationToKiwiSaverCalculator()[pri:0, instance:westpacTestCases.westpacUserStoryOneTests@1832929]" name="checkUserNavigationToKiwiSaverCalculator" duration-ms="3110" started-at="2020-10-05T01:21:10 NZDT" finished-at="2020-10-05T01:21:14 NZDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkUserNavigationToKiwiSaverCalculator -->
+        <test-method status="PASS" signature="VerifyAllHelpIconsPresent()[pri:0, instance:westpacTestCases.westpacUserStoryOneTests@1832929]" name="VerifyAllHelpIconsPresent" duration-ms="9609" started-at="2020-10-05T01:21:14 NZDT" finished-at="2020-10-05T01:21:23 NZDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyAllHelpIconsPresent -->
+        <test-method status="PASS" signature="CheckAcceptanceCriteriaUserStory1()[pri:0, instance:westpacTestCases.westpacUserStoryOneTests@1832929]" name="CheckAcceptanceCriteriaUserStory1" duration-ms="1185" started-at="2020-10-05T01:21:23 NZDT" finished-at="2020-10-05T01:21:24 NZDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckAcceptanceCriteriaUserStory1 -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:westpacTestCases.westpacUserStoryOneTests@1832929]" name="TearDown" is-config="true" duration-ms="1249" started-at="2020-10-05T01:21:24 NZDT" finished-at="2020-10-05T01:21:26 NZDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- westpacTestCases.westpacUserStoryOneTests -->
+    </test> <!-- WestpacUserStoryAcceptance -->
+    <test name="WestpacUserStoryTwo" duration-ms="42380" started-at="2020-10-05T01:21:26 NZDT" finished-at="2020-10-05T01:22:08 NZDT">
+      <class name="westpacTestCases.westpacUserStoryTwoTests">
+        <test-method status="PASS" signature="prepareSetupForTesting(java.lang.String)[pri:0, instance:westpacTestCases.westpacUserStoryTwoTests@8e7350]" name="prepareSetupForTesting" is-config="true" duration-ms="11555" started-at="2020-10-05T01:21:26 NZDT" finished-at="2020-10-05T01:21:37 NZDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prepareSetupForTesting -->
+        <test-method status="PASS" signature="VerifyUserStoryTwoAcceptCriteriaOne()[pri:0, instance:westpacTestCases.westpacUserStoryTwoTests@8e7350]" name="VerifyUserStoryTwoAcceptCriteriaOne" duration-ms="14676" started-at="2020-10-05T01:21:37 NZDT" finished-at="2020-10-05T01:21:52 NZDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyUserStoryTwoAcceptCriteriaOne -->
+        <test-method status="PASS" signature="VerifyUserStoryTwoAcceptCriteriaTwo()[pri:0, instance:westpacTestCases.westpacUserStoryTwoTests@8e7350]" name="VerifyUserStoryTwoAcceptCriteriaTwo" duration-ms="4723" started-at="2020-10-05T01:21:52 NZDT" finished-at="2020-10-05T01:21:57 NZDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyUserStoryTwoAcceptCriteriaTwo -->
+        <test-method status="PASS" signature="VerifyUserStoryTwoAcceptCriteriaThree()[pri:0, instance:westpacTestCases.westpacUserStoryTwoTests@8e7350]" name="VerifyUserStoryTwoAcceptCriteriaThree" duration-ms="10218" started-at="2020-10-05T01:21:57 NZDT" finished-at="2020-10-05T01:22:07 NZDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyUserStoryTwoAcceptCriteriaThree -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:westpacTestCases.westpacUserStoryTwoTests@8e7350]" name="TearDown" is-config="true" duration-ms="1205" started-at="2020-10-05T01:22:07 NZDT" finished-at="2020-10-05T01:22:08 NZDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- westpacTestCases.westpacUserStoryTwoTests -->
+    </test> <!-- WestpacUserStoryTwo -->
+  </suite> <!-- WestpacDemoProject -->
+</testng-results>

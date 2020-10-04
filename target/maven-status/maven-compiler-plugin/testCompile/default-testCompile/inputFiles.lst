@@ -1,9 +1,6 @@
-C:\Users\NADEEM-IT\IdeaProjects\XeroDemoProject\src\test\java\xeroTestCases\verifyXeroDemoTests.java
-C:\Users\NADEEM-IT\IdeaProjects\XeroDemoProject\src\test\java\xeroUtilities\numberUtilities.java
-C:\Users\NADEEM-IT\IdeaProjects\XeroDemoProject\src\test\java\com\xero\pages\FreeTrialPage.java
-C:\Users\NADEEM-IT\IdeaProjects\XeroDemoProject\src\test\java\com\xero\pages\XeroLoginPage.java
-C:\Users\NADEEM-IT\IdeaProjects\XeroDemoProject\src\test\java\xeroUtilities\browserSelectionUtility.java
-C:\Users\NADEEM-IT\IdeaProjects\XeroDemoProject\src\test\java\com\xero\pages\AccountingPage.java
-C:\Users\NADEEM-IT\IdeaProjects\XeroDemoProject\src\test\java\com\xero\pages\CompanyDetailsPage.java
-C:\Users\NADEEM-IT\IdeaProjects\XeroDemoProject\src\test\java\com\xero\pages\XeroHomePage.java
-C:\Users\NADEEM-IT\IdeaProjects\XeroDemoProject\src\test\java\xeroTestCases\verifyXeroFreeRegistrationTests.java
+C:\Users\NADEEM-IT\IdeaProjects\westpac\src\test\java\westpacUtilities\westpacUtilities.java
+C:\Users\NADEEM-IT\IdeaProjects\westpac\src\test\java\com\westpac\pages\WestpacHomePage.java
+C:\Users\NADEEM-IT\IdeaProjects\westpac\src\test\java\westpacTestCases\westpacUserStoryOneTests.java
+C:\Users\NADEEM-IT\IdeaProjects\westpac\src\test\java\westpacTestCases\westpacUserStoryTwoTests.java
+C:\Users\NADEEM-IT\IdeaProjects\westpac\src\test\java\com\westpac\pages\KiwiSaverRetirementCalculatorPage.java
+C:\Users\NADEEM-IT\IdeaProjects\westpac\src\test\java\westpacUtilities\browserSelectionUtility.java

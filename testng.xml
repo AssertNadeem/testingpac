@@ -1,25 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="XeroDemoProject">
-    <parameter name="email" value="nadeem.shine@gmail.com" />
-    <parameter name="pwd" value="!!@!@!!" />
-    <test name="HomePageTests" parallel="false">
-        <classes>
-            <class name="xeroTestCases.verifyXeroDemoTests">
+<suite name="WestpacDemoProject">
+    <test name="WestpacUserStoryAcceptance" parallel="false">
+        <parameter name="browser" value="chrome" />
+       <classes>
+            <class name="westpacTestCases.westpacUserStoryOneTests">
                 <methods>
                     <include name="checkUserlandsOnHomePage"/>
-                    <include name="CheckLoginButtonOnHomePage"/>
-                    <include name="VerifyValidLoginToXero"/>
-                    <include name="VerifyCompanyRegistration"/>
-                    <include name="VerifyAccountSetup"/>
+                    <include name="checkUserNavigationToKiwiSaverCalculator"/>
+                    <include name="VerifyAllHelpIconsPresent"/>
+                    <include name="CheckAcceptanceCriteriaUserStory1"/>
                 </methods>
             </class>
-            <!--
-            <class name="xeroTestCases.verifyXeroFreeRegistrationTests">
+       </classes>
+    </test>
+    <test name="WestpacUserStoryTwo" parallel="false">
+        <parameter name="browser" value="chrome" />
+        <classes>
+           <class name="westpacTestCases.westpacUserStoryTwoTests">
                 <methods>
-                    <exclude name="VerifyXeroFreeRegistration"/>
+                    <include name="VerifyUserStoryTwoAcceptCriteriaOne"/>
+                    <include name="VerifyUserStoryTwoAcceptCriteriaTwo"/>
+                    <include name="VerifyUserStoryTwoAcceptCriteriaThree"/>
                 </methods>
-            </class> -->
+           </class>
         </classes>
     </test>
 </suite>

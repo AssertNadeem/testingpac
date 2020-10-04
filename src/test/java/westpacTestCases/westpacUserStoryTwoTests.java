@@ -1,48 +1,71 @@
 package westpacTestCases;
 
-import com.westpac.pages.FreeTrialPage;
+import com.westpac.pages.KiwiSaverRetirementCalculatorPage;
+import com.westpac.pages.WestpacHomePage;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import westpacUtilities.browserSelectionUtility;
 
 import java.util.concurrent.TimeUnit;
 
-public class westpacScenarioTwoTests {
+import static westpacUtilities.westpacUtilities.fetchMyProperties;
+
+public class westpacUserStoryTwoTests {
+
     WebDriver driver;
-    FreeTrialPage ftPageobj;
+
+    KiwiSaverRetirementCalculatorPage KiwiSaverPageobj;
+    WestpacHomePage homePageobj;
 
     @BeforeTest
-    public void prepareSetupForTesting(){
+    @Parameters("browser")
+    public void prepareSetupForTesting(String browser) throws Exception {
+        String url = fetchMyProperties("BaseUrl"); // fetching url from properties file.
         //Start the browser
-        driver = browserSelectionUtility.StartBrowser("Chrome", "https://www.xero.com/nz/");
-        //Initialize login page using page Factory
-        ftPageobj  = PageFactory.initElements(driver, FreeTrialPage.class);
+        driver = browserSelectionUtility.StartBrowser(browser, url);
+        //Initialize page objects using page Factory
+        KiwiSaverPageobj = PageFactory.initElements(driver, KiwiSaverRetirementCalculatorPage.class);
+        homePageobj = PageFactory.initElements(driver, WestpacHomePage.class);
+
+    }
+
+    @Test
+    public void VerifyUserStoryTwoAcceptCriteriaOne() throws Exception {
+        //Navigate to kiwisaver calculate
+        homePageobj.setCalculateKiwiSaverPage();
+        homePageobj.setGetStarted_ks_btn();
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
+        //As the elements are present in an iframe, we have to switch to the frame
+        driver.switchTo().frame(driver.findElement(By.cssSelector("#calculator-embed > iframe")));
+
+        KiwiSaverPageobj.employedKiwiSaverProjections();
     }
     @Test
-    public void VerifyXeroFreeRegistration(){
+    public void VerifyUserStoryTwoAcceptCriteriaTwo() throws Exception {
+
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        ftPageobj.setFirst_name("Abdul Nadeem");
-        ftPageobj.setLast_name("Mohammad");
+        KiwiSaverPageobj.SelfemployedKiwiSaverProjections();
+    }
+
+    @Test
+    public void VerifyUserStoryTwoAcceptCriteriaThree() throws Exception {
+
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        ftPageobj.setEmail_id("nadeem.shine@gmail.com");
-        ftPageobj.setPhone_number("0222222222");
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        //ftPageobj.setSelect_country("NZ");
-        //driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-        //Disabled recaptcha as it need google keys or we need to disable for our automation
-        //ftPageobj.setRecaptcha_checkbox();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        ftPageobj.setTconditions();
-        //driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        //ftPageobj.setRegisterbtn();
+        KiwiSaverPageobj.NotemployedKiwiSaverProjections();
     }
 
     @AfterTest
     public void TearDown(){
-        //Quit driver
-        driver.quit();
+        //Quit driver if not null
+        if (driver != null) {
+            driver.quit();
+        }
     }
+
 }
