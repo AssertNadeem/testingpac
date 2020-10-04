@@ -1,16 +1,16 @@
-package xeroTestCases;
+package westpacTestCases;
 
-import com.xero.pages.FreeTrialPage;
+import com.westpac.pages.FreeTrialPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import xeroUtilities.browserSelectionUtility;
+import westpacUtilities.browserSelectionUtility;
 
 import java.util.concurrent.TimeUnit;
 
-public class verifyXeroFreeRegistrationTests {
+public class westpacScenarioTwoTests {
     WebDriver driver;
     FreeTrialPage ftPageobj;
 

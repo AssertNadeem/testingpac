@@ -1,4 +1,4 @@
-package com.xero.pages;
+package com.westpac.pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -8,13 +8,13 @@ import org.openqa.selenium.support.How;
 
 import java.util.concurrent.TimeUnit;
 
-public class XeroLoginPage {
+public class LoginPage {
 
     WebDriver driver;
 
 
     //constructor to initialize driver passed by page Factory
-    public XeroLoginPage(WebDriver ldriver) {
+    public LoginPage(WebDriver ldriver) {
         this.driver = ldriver;
     }
 

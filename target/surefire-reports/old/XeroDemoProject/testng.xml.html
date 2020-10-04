@@ -1,0 +1,21 @@
+<html><head><title>testng.xml for XeroDemoProject</title></head><body><tt>&lt;?xml&nbsp;version="1.0"&nbsp;encoding="UTF-8"?&gt;
+<br/>&lt;!DOCTYPE&nbsp;suite&nbsp;SYSTEM&nbsp;"https://testng.org/testng-1.0.dtd"&gt;
+<br/>&lt;suite&nbsp;guice-stage="DEVELOPMENT"&nbsp;verbose="0"&nbsp;name="XeroDemoProject"&gt;
+<br/>&nbsp;&nbsp;&lt;parameter&nbsp;name="pwd"&nbsp;value="TigerTiger112"/&gt;
+<br/>&nbsp;&nbsp;&lt;parameter&nbsp;name="email"&nbsp;value="nadeem.shine@gmail.com"/&gt;
+<br/>&nbsp;&nbsp;&lt;test&nbsp;thread-count="5"&nbsp;verbose="0"&nbsp;name="HomePageTests"&gt;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;classes&gt;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;class&nbsp;name="xeroTestCases.verifyXeroDemoTests"&gt;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;methods&gt;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;include&nbsp;name="checkUserlandsOnHomePage"/&gt;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;include&nbsp;name="CheckLoginButtonOnHomePage"/&gt;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;include&nbsp;name="VerifyValidLoginToXero"/&gt;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;include&nbsp;name="VerifyCompanyRegistration"/&gt;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;include&nbsp;name="VerifyAccountSetup"/&gt;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;include&nbsp;name="VerifyLogoutWorks"/&gt;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/methods&gt;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/class&gt;&nbsp;&lt;!--&nbsp;xeroTestCases.verifyXeroDemoTests&nbsp;--&gt;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/classes&gt;
+<br/>&nbsp;&nbsp;&lt;/test&gt;&nbsp;&lt;!--&nbsp;HomePageTests&nbsp;--&gt;
+<br/>&lt;/suite&gt;&nbsp;&lt;!--&nbsp;XeroDemoProject&nbsp;--&gt;
+<br/></tt></body></html>

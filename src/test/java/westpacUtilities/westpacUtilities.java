@@ -1,8 +1,5 @@
-package xeroUtilities;
+package westpacUtilities;
 
-import org.testng.annotations.Test;
-
-import java.nio.charset.Charset;
 import java.util.Random;
 
 public class numberUtilities {

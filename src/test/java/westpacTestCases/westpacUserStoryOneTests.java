@@ -1,32 +1,34 @@
-package xeroTestCases;
+package westpacTestCases;
 
-import com.xero.pages.*;
+import com.westpac.pages.WestpacHomePage;
+import com.westpac.pages.LoginPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.*;
-import xeroUtilities.browserSelectionUtility;
+import westpacUtilities.browserSelectionUtility;
 
 import java.util.concurrent.TimeUnit;
 
-public class verifyXeroDemoTests {
+import static westpacUtilities.westpacUtilities.fetchMyProperties;
+
+public class westpacScenarioOneTests {
 
     WebDriver driver;
 
-    XeroLoginPage loginPageobj;
-    XeroHomePage homePageobj;
-    CompanyDetailsPage compDetailsobj;
-    AccountingPage accPageObj;
+    LoginPage loginPageobj;
+    WestpacHomePage homePageobj;
+
 
     @BeforeSuite
-    public void prepareSetupForTesting(){
+    @Parameters("browser")
+    public void prepareSetupForTesting(String browser) throws Exception {
+        String url = fetchMyProperties("BaseUrl"); // fetching url from properties file.
         //Start the browser
-        driver = browserSelectionUtility.StartBrowser("chrome", "https://www.xero.com/nz/");
+        driver = browserSelectionUtility.StartBrowser(browser, url);
         //Initialize page objects using page Factory
-        loginPageobj = PageFactory.initElements(driver, XeroLoginPage.class);
-        homePageobj = PageFactory.initElements(driver, XeroHomePage.class);
-        compDetailsobj = PageFactory.initElements(driver, CompanyDetailsPage.class);
-        accPageObj = PageFactory.initElements(driver, AccountingPage.class);
+        loginPageobj = PageFactory.initElements(driver, LoginPage.class);
+        homePageobj = PageFactory.initElements(driver, WestpacHomePage.class);
     }
 
     @Test
@@ -34,12 +36,12 @@ public class verifyXeroDemoTests {
     public void checkUserlandsOnHomePage(){
         //Get the title of the home page
         String tTitle = driver.getTitle();
-        String curTitle = "Accounting Software – Do Beautiful Business | Xero NZ";
-        Assert.assertEquals(tTitle,curTitle);
+        String curTitle = "Bank | Westpac New Zealand - Helping Kiwis with their personal banking";
+        Assert.assertEquals(tTitle,curTitle); // check the titles match
     }
 
     @Test
-    //Test to login to Xero
+    //Test to login to westpac
     public void CheckLoginButtonOnHomePage(){
         //Login button click
         driver.manage().timeouts().pageLoadTimeout(35, TimeUnit.SECONDS);
@@ -70,6 +72,7 @@ public class verifyXeroDemoTests {
         //driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
     }
 
+    /*
     //Registration test is disabled
     @Test(enabled=false)
     public void VerifyCompanyRegistration(){
@@ -109,7 +112,7 @@ public class verifyXeroDemoTests {
         //Application lands on Connect with bank page
         Assert.assertEquals(fTitle, "Connect with bank");
     }
-
+*/
     @AfterSuite
     public void TearDown(){
         //Quit driver if not null
